@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансії</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Вакансії</a>
+        <a href="profile.html">Мій профіль</a>
+        <a href="search.html">Пошук роботи</a>
+    </nav>
+</header>
+<div class="container">
+    <h1>Список вакансій</h1>
+    <div class="filters">
+        <select id="category-filter">
+            <option value="">Категорія</option>
+            <option value="Розробник">Розробник</option>
+            <option value="Тестувальник">Тестувальник</option>
+        </select>
+        <select id="location-filter">
+            <option value="">Місто</option>
+            <option value="Київ">Київ</option>
+            <option value="Львів">Львів</option>
+        </select>
+        <select id="salary-filter">
+            <option value="">Зарплата</option>
+            <option value="2500">$2500+</option>
+            <option value="3000">$3000+</option>
+        </select>
+        <button id="apply-filters">Застосувати</button>
+    </div>
+    <div class="grid" id="vacancies-container"></div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
